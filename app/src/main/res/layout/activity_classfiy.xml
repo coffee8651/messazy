@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tiffy_blue">
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back"/>
+        <TextView
+            android:id="@+id/confirm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:text="完成"
+            android:textColor="#fff"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/classfiy_first"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/canyin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_canyin"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/jiaotong"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_jiaotong"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/zhufang"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_zhufang"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/gouwu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_gouwu"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/classfiy_second"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/classfiy_first"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/yule"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_yule"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/taobao"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_taobao"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/yuyin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_yuying"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/qiche"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_qiche"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/seekbar_part"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/classfiy_second"
+        >
+
+        <TextView
+            android:id="@+id/classfiy_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:text="580"
+            android:textSize="20sp"
+            android:textColor="#000"/>
+
+        <SeekBar
+            android:id="@+id/classfiy_seekbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@id/classfiy_num"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+
+            />
+
+
+
+    </RelativeLayout>
+
+    <com.coffee.messzay.widget.MyPieChart
+        android:id="@+id/my_pie_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/seekbar_part"
+        android:layout_marginTop="30dp"
+        android:padding="40dp"/>
+
+</RelativeLayout>

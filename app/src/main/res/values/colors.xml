@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--全局-->
+    <drawable name="transparent">#00000000</drawable>
+    <color name="color_transparent">#00000000</color>
+
+
+    <!--首页列表-->
+    <drawable name="progressbar">#ffaa00</drawable>
+    <color name="color_progressbar">#ffaa00</color>
+    <drawable name="tiffy_blue">#81D8CF</drawable>
+
+
+</resources>

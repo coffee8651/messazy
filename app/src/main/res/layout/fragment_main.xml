@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tiffy_blue">
+        <ImageView
+            android:id="@+id/header_calender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:src="@mipmap/calender"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/total_part"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:paddingTop="35dp"
+        android:paddingLeft="35dp"
+        android:paddingBottom="80dp"
+        android:background="@drawable/tiffy_blue">
+
+        <TextView
+            android:id="@+id/total_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9月"
+            android:textColor="#fff"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/total_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total_title"
+            android:text="5800"
+            android:textSize="38sp"
+            android:textColor="#fff"/>
+        <ImageView
+            android:id="@+id/pie_chart"
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:layout_toRightOf="@id/total_num"
+            android:layout_marginLeft="30dp"
+            android:src="@mipmap/test_pie_chart"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/detail_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total_part"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none"
+        android:dividerHeight="10dp"
+        >
+    </ListView>
+
+</RelativeLayout>
